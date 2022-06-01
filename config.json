@@ -1,0 +1,10 @@
+{
+    "token"     : "OTQzOTUwNzY2NjUyMTM3NTAz.Yg6gqA.v-dtthJkE133A_Jpgm7xjT04dco",
+    "versi"     : "1.0.0",
+    "author"    : "Cicak Kayang",
+
+    "host"      : "localhost",
+    "user"      : "root",
+    "password"  :  "",
+    "database"  : "discord"
+}
