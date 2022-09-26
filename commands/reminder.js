@@ -18,7 +18,7 @@ module.exports = ('ready', (dc) => {
     for (let i = 0; i < jadwal.length; i++){
         if(j == day){
             for(let k = 0; k < jadwal[i].jam.length; k++){
-                let limaMenit = (parseInt(jadwal[i].jam[k].slice(3, 5)) - 10)
+                let limaMenit = (parseInt(jadwal[i].jam[k].slice(3, 5)) - 30)
                 limaMenit = limaMenit.toString()
                 
                 if(limaMenit < 0){
@@ -30,7 +30,7 @@ module.exports = ('ready', (dc) => {
 
                 if(jamSekarang == waktu){
                     embed.setTitle(`Mata Kuliah`)
-                    embed.setDescription('10 menit lagi akan dimulai')
+                    embed.setDescription('30 menit lagi akan dimulai')
                     embed.addField(jadwal[i].matkul[k], jadwal[i].jam[k])
                     dc.channels.cache.get(id).send(embed)
                     dc.channels.cache.get(id).send('@everyone')

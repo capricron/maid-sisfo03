@@ -18,7 +18,7 @@ const Matkul = sequelize.define('matkuls', {
       type: DataTypes.STRING,
       allowNull: false
     },
-    link: {
+    ruang: {
       type: DataTypes.STRING,
       allowNull: false
     },

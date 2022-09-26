@@ -13,6 +13,8 @@ function hari(i){
             return "Kamis"
         case 5:
             return "Jumat"
+        case 6:
+            return "Sabtu"
     }
 }
 
@@ -40,17 +42,17 @@ module.exports = {
         embed.setColor("eb4034")
         let ulang = true
         
-        const libur = ["sabtu", "minggu"]
+        const libur = ["minggu"]
 
         const matkul = await Matkul.findAll({
-            attributes: ['hari', 'matkul', 'jam', 'link']
+            attributes: ['hari', 'matkul', 'jam', 'ruang']
         })
 
         if(args){
             embed.color =   "0x"+Math.floor(Math.random()*16777215).toString(16)
             console.log(args)
             const matkul = await Matkul.findAll({
-                attributes: ['hari', 'matkul', 'jam', 'link'],
+                attributes: ['hari', 'matkul', 'jam', 'ruang'],
                 where: {
                     hari: kulawik(args.toLowerCase())
                 }
@@ -67,8 +69,13 @@ module.exports = {
             embed.color =   "0x"+Math.floor(Math.random()*16777215).toString(16)
             let w = 0
             for(let i = 0; i < matkul.length; i++){
+                console.log("matkul",matkul[i].hari)
+                console.log("w",w+1)
                 if( matkul[i].hari == w+1){
                     embed.addField("---"+hari(w+1)+"---", "===============")
+                    if((w+1) == 3){
+                        w = w + 1
+                    }
                     w++
                 }
                 embed.addField(matkul[i].matkul, matkul[i].jam)

@@ -33,6 +33,7 @@ dc.on('ready', () => {
 })
 
 dc.on('message', (msg) => {
+    console.log(msg.content);
     let user = msg.author.username
     let args = msg.content.split(' ')
     let input = []
@@ -74,9 +75,9 @@ dc.on('message', (msg) => {
             perintah.get('deadline').execute(msg, input[1])
             break;
         
-        case "link":
-            perintah.get('link').execute(msg , input)
-            break;
+        // case "link":
+        //     perintah.get('link').execute(msg , input)
+        //     break;
         
         case "send":
             perintah.get('haram').execute(msg , input[1])

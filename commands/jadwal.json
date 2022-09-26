@@ -1,27 +1,27 @@
 [
     {
         "hari" : "Senin",
-        "jam" : ["12:30 - 15:30"],
-        "matkul" : ["Dasar Keuangan Sistem Informasi"]
+        "jam" : ["14:30 - 17:30"],
+        "matkul" : ["Pemodelan Proses Bisnis"]
     },
     {
         "hari": "Selasa",
-        "jam" : ["13:00 - 14:00"],
-        "matkul" : ["Probalitas Dan Statistika"]
+        "jam" : ["13:00 - 16:30"],
+        "matkul" : ["Desain Jaringan Komputer Dan Komunikasi Data"]
     },
     {
         "hari" : "Rabu",
-        "jam" : ["06:30 - 08:30", "10:30 - 12:30"],
-        "matkul" : ["Bahasa Indonesia", "Pendidikan Pancasila"]
-    },
-    {
-        "hari" : "Kamis",
-        "jam" : ["11:00 - 12:30","13:30 - 15:30"],
-        "matkul" : ["Kepemimpinan Dan Komunikasi","Algoritma Dan Pemograman"]
+        "jam" : ["10:30 - 12:30", "15:30 - 18:30"],
+        "matkul" : ["Kewirausahaan", "Pengantar Pemograman Dan Logika"]
     },
     {
         "hari" : "Jumat",
-        "jam" : ["09:30 - 12:30", "13:30 - 15:30"],
-        "matkul" : ["Matriks dan Ruang Vektor" , "Algoritma Dan Pemograman"]
+        "jam" : ["06:30 - 09:30","13:30 - 14:30", "15:30 - 18:30"],
+        "matkul" : ["Perilaku Organisasi","Desain Pengalaman Pengguna", "Pemograman Berorientasi Objek"]
+    },
+    {
+        "hari" : "Sabtu",
+        "jam" : ["06:30 - 09:30"],
+        "matkul" : ["Statistika Industri"]
     }
 ]

@@ -17,7 +17,7 @@ module.exports = {
       jam: {
         type: Sequelize.STRING
       },
-      link: {
+      ruang: {
         type: Sequelize.STRING
       },
       matkul: {

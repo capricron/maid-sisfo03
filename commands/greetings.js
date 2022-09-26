@@ -48,7 +48,7 @@ module.exports =  ('ready', async (dc) => {
         
         dc.channels.cache.get(id).send('@everyone')
 
-    }else if(jam == "17:00"){
+    }else if(jam == "18:00"){
         embed.setTitle('Selamat Malam Onichan');
         embed.setDescription("Gimana Hari mu genki deska?")
         embed.addField('Jangan Lupa dengan Tugas nya ya', '===')
