@@ -49,6 +49,9 @@ module.exports = {
         })
 
         if(args){
+            if(libur.includes(args)){
+                msg.channel.send("Libur mas :v")
+            }
             embed.color =   "0x"+Math.floor(Math.random()*16777215).toString(16)
             console.log(args)
             const matkul = await Matkul.findAll({
