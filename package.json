@@ -12,7 +12,7 @@
     "axios": "^0.26.0",
     "cron": "^1.8.2",
     "discord.js": "^12.5.3",
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.10",
     "express": "^4.17.3",
     "firebase": "^9.6.8",
     "firebase-admin": "^10.0.2",
